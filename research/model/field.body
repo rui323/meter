@@ -1,0 +1,23 @@
+format: ChoreonoidBody
+formatVersion: 1.0
+angleUnit: degree
+name: field
+
+links: 
+    -
+        name: f
+        translation: [0.0,0.0,0.0]
+        jointType: fixed
+        centerOfMass: [0.0,0.0,0.0]
+        mass: 80.0
+        
+        elements:
+            Shape:
+                geometry:
+                    type: Box
+                    size: [10,10,0.05]
+                appearance:
+                    material:
+                        diffuseColor: [0.5,0.5,0.5]
+                        shininess: 0.6
+
