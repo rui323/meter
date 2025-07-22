@@ -44,3 +44,15 @@ python3 read_max_min.py image_min_pic_1.jpg
 ~~~bash!
 python3 line_detect.py cropped_1_n.jpg
 ~~~
+
+## C++
+### detect.cpp tesseract.cpp
+ - 文字認識プログラム
+### line_detect.cpp
+ - メーターの外淵が誤った線検出をしそうなのでHoughCircleで削除
+ - 二値化処理
+ - 線検出
+ - 画像の中央を通っているか
+ - 長針、短針の判別
+ - 真上に向かうベクトルと長針のベクトルのなす角度を求める
+ - その角度にから値を計算する
