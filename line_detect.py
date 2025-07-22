@@ -76,10 +76,10 @@ def detect_line(path):
     output[mask == 255] = bit[mask == 255]
 
     # 二値画像をマスクでくり抜く
-    # cropped = cv2.bitwise_and(bit, bit, mask=mask)
-    # cv2.imshow("crop", output)
-    # cv2.waitKey(0)
-    # cv2.destroyAllWindows()
+    cropped = cv2.bitwise_and(bit, bit, mask=mask)
+    cv2.imshow("crop", output)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
 
     reverse = cv2.bitwise_not(output)
     cv2.imshow("rev", reverse)
